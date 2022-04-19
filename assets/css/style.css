@@ -1,0 +1,269 @@
+
+:root {
+    --gap: 3rem;
+}
+body {
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.5rem;
+}
+h4 {
+    font-size: 2.5rem;
+}
+h5 {
+    font-size: 2rem;
+}
+h6 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.main-bg{
+    background-color: white;
+}
+
+.grey-bg{
+    background-color: #F4F4F4;
+}
+
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+
+.section {
+    min-height: 100vh;
+}
+
+.menu {
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+}
+
+.menu img {
+
+    width: 150px;
+    height: 70px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.intro-content{
+    position: relative;
+    top: -7rem;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.intro-text-content, .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-text-content h1 {
+    margin-bottom: 4rem;
+}
+
+.intro-text-content h6 {
+    margin-top: 2rem;
+}
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.grid img{
+    max-width: 100%;
+    width: 25rem;
+    height: 25rem;
+    object-fit: scale-down;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+.grid-one-content h5 {
+    margin-top: -12rem;
+    text-align: center;
+}
+
+
+
+.menu .jbutton-white a {
+    border: 0.2rem solid #C41019;
+    padding: 0.8rem;
+    width: 6rem;
+    height: 1.5rem;
+    margin-right: 2rem;
+    margin-left: 5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #C41019;
+    font-size: 1.2rem;
+
+}
+
+.menu-content .jbutton {
+    background-color: #C41019;
+    padding: 1rem;
+    width: 15rem;
+    height: 1.4rem;
+    margin-top: 0rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.menu-content .jbutton a {
+    font-weight: bold;
+    color: FFFFFF;
+    font-size: 1.2rem;
+}
+
+
+
+.jbutton {
+    background-color: #C41019;
+    padding: 10px;
+    width: 17rem;
+    height: 2.4rem;
+    margin-top: 3rem;
+}
+
+.jbutton a {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.feat {
+    text-align: center;
+    margin: 0rem;
+    height: 10vh;
+}
+
+.dep{
+    text-align: center;
+    margin: 0rem;
+    height:0vh;
+}
+
+.feat-content{
+    position: relative;
+    top: -7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.feat-text-content, .feat-rigth {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.cell {
+    border: 0.2rem solid #7B7B7B;
+    padding: 2.0rem;
+    -webkit-box-shadow: 7px 7px 3px 1px rgba(0,0,0,0.82); 
+    box-shadow: 7px 7px 3px 1px rgba(0,0,0,0.82);
+    border-radius: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.cell img{
+    display: inline-block;
+    vertical-align:top;
+    position: relative; 
+    width: 75px; 
+    height: 75px; 
+    overflow: hidden; 
+    border-radius: 50%; 
+}
+
+.cell p{
+    margin-top: 1rem;
+}
+
+.bio{
+    display: grid;
+    grid-template-columns: 0.16fr 0.7fr;
+}
+
+
+
+
+
+
+
+
+
+
