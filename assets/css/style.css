@@ -2,8 +2,7 @@
 :root {
     --gap: 3rem;
 }
-body {
-}
+
 
 html {
     font-size: 62.5%;
@@ -59,17 +58,19 @@ p {
     padding: var(--gap);
 }
 
-
 .section {
     min-height: 100vh;
 }
+
 
 .menu {
     background-color: white;
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     width: 100%;
+    min-height: 20vh;
 }
 
 .menu-content {
@@ -85,7 +86,6 @@ p {
 }
 
 .menu img {
-
     width: 150px;
     height: 70px;
 }
@@ -95,14 +95,31 @@ p {
     display: flex;
 }
 
-
 .menu ul li a {
     display: block;
     padding: 2rem;
     font-size: 1.2rem;
     font-weight: bold;
     color: black;
+    position: relative;
 }
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0.8rem;
+    left: 25%;
+    width: 0;
+    height: 0.2rem;
+    background: crimson; 
+    transition: all 300ms ease-in-out;
+  }
+  
+  .menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+  }
+
 
 .intro-content{
     position: relative;
@@ -110,7 +127,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1.1fr;
     gap: var(--gap);
-    height: 100vh;
+    height: 80vh;
 }
 
 .intro-text-content, .intro-img {
@@ -140,8 +157,8 @@ p {
 
 .grid img{
     max-width: 100%;
-    width: 25rem;
-    height: 25rem;
+    width: 20rem; 
+    height: 15rem; 
     object-fit: scale-down;
 }
 
@@ -152,10 +169,8 @@ p {
     counter-reset: grid-counter;
 }
 .grid-one-content h5 {
-    margin-top: -12rem;
     text-align: center;
 }
-
 
 
 .menu .jbutton-white a {
@@ -189,8 +204,6 @@ p {
     color: FFFFFF;
     font-size: 1.2rem;
 }
-
-
 
 .jbutton {
     background-color: #C41019;
@@ -230,9 +243,10 @@ p {
     flex-flow: column wrap;
     justify-content: center;
 }
+
 .cell {
     border: 0.2rem solid #7B7B7B;
-    padding: 2.0rem;
+    padding: 4rem;
     -webkit-box-shadow: 7px 7px 3px 1px rgba(0,0,0,0.82); 
     box-shadow: 7px 7px 3px 1px rgba(0,0,0,0.82);
     border-radius: 2.5rem;
@@ -257,6 +271,38 @@ p {
     display: grid;
     grid-template-columns: 0.16fr 0.7fr;
 }
+
+footer{
+    border-top: 0.001rem solid #707070;
+    
+}
+
+footer h6{
+    margin-bottom: 0.5rem;    
+}
+
+
+.row-nowrap {
+    flex-flow:  row nowrap
+}
+
+.container {
+	margin: 0 auto;
+	display: flex;
+	border: 0px solid #ccc;
+}
+
+/* Flex Item */
+.item {
+    padding: 2rem;
+	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+    flex: 1;
+}
+
+
+
+
+
 
 
 
