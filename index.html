@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald&display=swap" rel="stylesheet"> 
     <script src="https://jspreadsheet.com/v8/jspreadsheet.js"></script>
     <script src="https://jsuites.net/v4/jsuites.js"></script>
     <link rel="stylesheet" href="https://jspreadsheet.com/v8/jspreadsheet.css" type="text/css" />
@@ -27,7 +30,7 @@
                     <li><a href="https://jspreadsheet.com/v8/2">Extensions</a></li>
                     <li><a href="https://jspreadsheet.com/v8/3">Princing</a></li>
                     <li class="jbutton-white" ><a href="https://jspreadsheet.com/v8/4">Login</a></li>
-                    <p class="jbutton" ><a href="https://jspreadsheet.com/v8/5">Start Your Free Trial</a></p>
+                    <li class="jbutton-red" ><a href="https://jspreadsheet.com/v8/4">Sign up</a></li>
                 </ul>
                 
             </nav>
@@ -37,13 +40,16 @@
     <section class="intro main-bg ">
         <div class="main-content intro-content">
             <div class="intro-text-content">
-            <h1>The best JavaScript data grid</h1>
-            <p>A lightweight Vanilla JavaScript plugin to create applications with spreadsheet-like controls. 
-            Works with prominent modern frameworks and a large collection of events, extensions and configurations.</p>
+            <h1>Devs don’t need to start from the scratch with Jspreadsheet</h1>
+            <p>Save your development time. Jspreadsheet is the Vanilla JavaScript 
+                Plugin which gives you all the tools to create excepcional web-based
+                 applications with spreadsheet-like controls.</p>
             <h6>Compatible with React, Angular, Vue JS and Chart JS.</h6>
-            <p class="jbutton">
-                <a href="#" title="Meu Link">Start Your Free Trial</a>
-            </p>
+            <div class="input-email">
+                <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="name@company.com"> 
+                <button  type="button"  class="jbutton" >Start Free Trial </button>
+            </div>
+
         </div>
         <div class="intro-img">
             <div id='spreadsheet-animation2' style='width:100%; max-width: 520px;'></div>
@@ -64,10 +70,13 @@
                     <img src="assets/img/metrex.jpg" alt=""/>
                 </div>
                 <div class="gallery-img1">
-                    <img src="assets/img/figlinq.png" alt=""/>
+                    <img src="assets/img/Prancheta 1.png" alt=""/>
                 </div>
                 <div class="gallery-img">
                     <img src="assets/img/questrmg.jpg" alt=""/>
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/img/figlinq.png" alt=""/>
                 </div>
             </div>
         </div>
@@ -75,19 +84,23 @@
     </section>
     <section class="grey-bg section">
         <div class="main-content intro-content">
-            <div class="intro-text-content">
+            <div class="meio-dep">
                 <h2>Filter options</h2>
-                <p>It has the column property filterOptions, which helps developers overwrite the behavior of a cell based on the values of another cell.</p>
-                <p class="jbutton">
-                <a href="#" title="Meu Link">Check source code</a>
-            </p>
+                <p>It has the column property filterOptions,
+                    which helps developers overwrite the behavior of a cell based on the values of another cell.</p>
+                    <div class="link"> 
+                        <a href="">Learn More -></a>
+                    </div>
+                    <div class="cell-dep">
+                        <h6>Dee Giarratano,</h6>
+                        <h6>CEO - Take off Lite</h6>
+                        <p>“JSpreadsheet has been instrumental in our success as a company.
+                             Takeoff Lite would not be the world-class product it is without them. The support is top-notch as well” </p>
+                    </div>
         </div>
             <div class="intro-img">
                 
                 <div id="spreadsheet1"></div>
- 
- 
-
  
 <script>
 var data = [
@@ -125,6 +138,13 @@ var data = [
       "img":"img/nophoto.jpg",
       "department": "string",
       "extension":"3130",
+   },
+   {
+      "id":6,
+      "name":"Iarlyson",
+      "img":"img/nophoto.jpg",
+      "department": "string",
+      "extension":"3131",
    }
 ]
  
@@ -186,7 +206,7 @@ jspreadsheet(document.getElementById('spreadsheet1'), {
                 var data = [];
                  
                 // Create the data
-                for (var j = 0; j < 10; j++) {
+                for (var j = 0; j < 12; j++) {
                     data[j] = [];
                     for (var i = 0; i < 6; i++) {
                         data[j][i] = jspreadsheet.helpers.getColumnNameFromCoords(i, j);
@@ -202,7 +222,7 @@ jspreadsheet(document.getElementById('spreadsheet1'), {
                         data: data,
                         tableOverflow: true,
                         tableWidth: '800px',
-                        tableHeight: '300px',
+                        tableHeight: '500px',
                     }],
                     onload: function() {
                         // Final time 
@@ -214,24 +234,41 @@ jspreadsheet(document.getElementById('spreadsheet1'), {
                 })
                 </script>
                             </div>
-            <div class="intro-text-content">
-                <h2>Lightweight and easy to use</h2>
-                <p>With a new DOM management engine, the pagination and lazy loading options allow for higher efficiency when rendering tables.</p>
-                <p class="jbutton">
-                    <a href="#" title="Meu Link">Check source code</a>
-                </p>
+            <div class="meio-dep">
+                <h2>Manage thousands of data base records in an instant</h2>
+                <p>With a new DOM management engine, 
+                    the pagination and lazy loading options allow 
+                    for higher efficiency when rendering tables.</p>
+                    <div class="link"> 
+                        <a href="">Learn More -></a>
+                    </div>
+                    
+                <div class="cell-dep">
+                    <h6>Dana Stoesz,</h6>
+                    <h6>Coder - Metrex</h6>
+                    <p>“The latest version of Jspreadsheet is a powerful tool, providing an excellent
+                         front end for our spreadsheet interface. The Jspreadsheet team is helpful and quick to respond.”</p>
+                </div>
             </div>
         </div>
     </section>
     <section class="grey-bg section">
-        <div class="main-content intro-content">
-            <div class="intro-text-content">
+        <div class="main-content quit-content">
+            <div class="meio-dep">
                 <h2>Highly flexible and customizable</h2>
                 <p>The advanced integrated tab management system gives users a higher degree of flexibility in their usage.</p>
-                <p class="jbutton">
-                    <a href="#" title="Meu Link">Check source code</a>
-                </p>
+                <div class="link"> 
+                    <a href="">Learn More -></a>
+                </div>
+
+                <div class="cell-dep">
+                    <h6>Lode Cools,</h6>
+                    <h6>CTO & Co-founder - Bizzcontrol</h6>
+
+                    <p>“We vetted 10 JS spreadsheet components and we must say that jspreadsheet comes out as the best”</p>
+                </div>
             </div>
+            
             <div class="intro-img">
                 <div id="spreadsheet3"></div>
  
@@ -325,116 +362,132 @@ chart = Highcharts.chart('container', {
 </script>
             </div>
         </div>
+
+        <section class="grey-bg section">
+            <div class="main-content intro-content">
+                <div class="intro-text-content">
+                    <div class="quite-img">
+                        <img src="assets/img/imagem.png" alt="Technical support"/>
+                    </div>
+
+                </div>
+                <div class="meio-dep">
+                    <h2>Technical support</h2>
+                    <p>Don’t get stuck on code. Jspreadsheet support team is ready to help you.</p>
+
+                    <div class="cell-dep">
+                        <h6>Mauricio Javier Solórzano,</h6>
+                        <h6>Software Engineer - QRMG</h6>
+
+                        <p>“It’s truly remarkable and nothing short of instrumental how this this tool has
+                            permitted the construction and implementation of a complete Spreadsheet solution
+                            within our Customer Portal, while reducing development time and keeping costs 
+                            at bay - certainly making this tool essential for improving ROI and  time-to-market.
+                            It is worth mentioning how well prepared and eager to provide assistance their technical
+                            support team is, either by email communications or directly through Google Meet and 
+                            Zoom conference calls!”</p>
+                    </div>
+
+                </div>
+            </div>
+
     </section>
     <section class="main-bg section">
-        <h3 class="feat main-content">And more features for developers</h3>
+        <h3 class="feat main-content">More features</h3>
         <div class="main-content feat-content">
             <div class="feat-text-content">
                 <div class="cell">
                     <h5>Formula parsing</h5>
                     <p>The upgraded formula engine ensures that the efficiency and accuracy of calculations are enhanced, even when dealing with chained formulas.</p>
+                    <div class="link"> 
+                        <a href="">Learn More -></a>
+                    </div>
                 </div>
                 <div class="cell">
                     <h5>Decouple editors</h5>
-                    <p>It allows the overwriting of column properties for one specific cell. For example, the table can be configured to render a drop down 
-                    in one specific cell within a text type column.</p>
+                    <p>It allows the overwriting of column properties for one specific cell. For example, the table can be configured to render a drop down in one specific cell within a text type column.</p>
+                    <div class="link"> 
+                        <a href="">Learn More -></a>
+                    </div>
                 </div>
                 <div class="cell">
                     <h5>Real-time collaboration</h5>
                     <p>Its real-time spreadsheet online sharing capacity gives multiple users the opportunity for effective collaboration.</p>
+                    <div class="link"> 
+                        <a href="">Learn More -></a>
+                    </div>
                 </div>
             </div>
             <div class="feat-rigth">
                 <div class="cell">
                     <h5>Data persistence</h5>
-                    <p>It offers complete support for data persistence. Developers can persist not only data, but also the properties of data tables in a remote server. Data tables can thus be easily recreated. 
-                    Stronger integration with remote servers enables better management of record IDs and remote data persistence.</p>
+                    <p>It offers complete support for data persistence. Developers can persist not only data,
+                        but also the properties of data tables in a remote server. Data tables can thus be easily 
+                        recreated. Stronger integration with remote servers enables better management of record IDs
+                        and remote data persistence.</p>
+                        <div class="link"> 
+                            <a href="">Learn More -></a>
+                        </div>
                 </div>
                 <div class="cell">
                     <h5>Export to XLSX</h5>
                     <p>With Jspreasheet you are able to export the data from JSS spreadsheet to a XLSX file.</p>
+                    <div class="link"> 
+                        <a href="">Learn More -></a>
+                    </div>
                 </div>
                 <div class="cell">
                     <h5>Import from XLSX</h5>
                     <p>With Jspreasheet you are able to import the data from XLSX file to your web-based spreadsheet.</p>
+                    <div class="link"> 
+                        <a href="">Learn More -></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="grey-bg section">
-        <h5 class="dep main-content">Some of our happy customers</h5>
-        <div class="main-content feat-content">
-            <div class="feat-text-content">
-                <div class="cell">
-                    <div class="bio">
-                        <img src="assets/img/persona/1.png" alt="" />
-                        <div class="bio-text">
-                            <h6>Javier Solórzano,</h6>
-                            <h6>Sr. Software Engineer</h6>
-                            <h6> Quest Resource Management Group</h6>
-                        </div>
-                    </div>
-                    <p>“It’s truly remarkable and nothing short of instrumental how this software development tool, being primarily based on JavaScript, has permitted the construction and implementation of a complete Spreadsheet solution within our Customer Portal,while reducing development time and keeping costs at bay - certainly making this tool essential for improving ROI and  time-to-market. It is worth mentioning how well prepared and eager to provide assistance their technical support team is, either by email communications or directly through Google Meet and  Zoom conference calls!” </p>
-                </div>
-            </div>
-            <div class="feat-rigth">
-                <div class="cell">
-                    <div class="bio">
-                        <img src="assets/img/persona/2.png" alt="" />
-                        <div class="bio-text">
-                            <h6>Lode Cools,</h6>
-                            <h6>CTO & Co-founder</h6>
-                        </div>
-                    </div>
-                    <p>“We vetted 10 JS spreadsheet components and we must say that jspreadsheet comes out as the best </p>
-                </div>
-                <div class="cell">
-                    <div class="bio">
-                        <img src="assets/img/persona/3.png" alt="" />
-                        <div class="bio-text">
-                            <h6>Dana Stoesz,</h6>
-                            <h6>Code</h6>
-                        </div>
-                    </div>
-                    <p>“The latest version of Jspreadsheet is a powerful tool, providing an excellent front end for our spreadsheet interface. The Jspreadsheet team is helpful and quick to respond.”</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="white-bg section">
-        <div class="main-content intro-content">
+    <section class="grey-bg">
+        <div class="main-content end-content">
             <div class="intro-text-content">
                 <h4>Create applications with spreadsheet-like controls</h4>
-                <p class="jbutton">
-                    <a href="#" title="Meu Link">Start Your Free Trial</a>
-                </p>
+                <div class="input-email">
+                    <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="name@company.com"> 
+                    <button  type="button"  class="jbutton" >Start Free Trial </button>
+                </div>
             </div>
             <div class="intro-img">
                 <div id='spreadsheet-animation1' style='width:100%; max-width: 520px;'></div>
             </div>
         </div>
-        <footer>
-            <div class="main-content container row-nowrap">
-                <div class="item">
-                <a href="" style="text-decoration: none; color: #555; font-size: 2.5rem; font-weight: bold; ">Jspread<span style="color:#A20021; font-size: 2rem; font-weight: bold; ">sheet</span></a>
+        </section>
+        <footer class="main-bg">
+            <div class="main-content container row-nowrap footer">
+
+
+            <div class="item shrink-1">
+                <ul>
+                <div class="container row"> 
+                    <li><h5 class="logo">Jspreadsheet</h5></li>
+                    <li><a href="https://jspreadsheet.com/jspreadsheet/contact">Contact</a></li>
+                    <li><a href="https://jspreadsheet.com/jspreadsheet/terms-and-conditions">Terms and conditions</a></li>
+                    <li><a href="https://jspreadsheet.com/jspreadsheet/privacy-policy">Privacy Policy</a></li>
+                </div>
+                </ul>
             </div>              
-            <div class="item"><p><a href="https://jspreadsheet.com/jspreadsheet/contact">Contact</a></p>
-            <p><a href="https://jspreadsheet.com/jspreadsheet/terms-and-conditions">Terms and conditions</a></p>
-<p><a href="https://jspreadsheet.com/jspreadsheet/privacy-policy">Privacy Policy</a></p></div>
             
-            <div class="item footer-list">
+            <div class="item shrink-1">
                 <h6>Newsletter</h6>
                 <p>Tech news, tips and technical advice.</p>
                     <form action="https://bossanova.us20.list-manage.com/subscribe/post?u=f9b5adf8223e3d5a8f575b0bb&amp;id=37f97a936c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
                         <div class="mc-field-group">
-                            <input type="email" value="" name="EMAIL" id="mce-EMAIL" aria-required="true"> 
-                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+                            <input type="email" value="" name="EMAIL" id="mce-EMAIL" aria-required="true" class="email-footer"> 
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="jbutton-dark">
                         </div>
                     </form>
                 <h6>Technical support</h6>
                 <a href="mailton:contact@jspreadsheet.com"><p>contact@jspreadsheet.com</p></a>
             </div>
-            <div class=" item footer-list">
+            <div class="item shrink-1">
                 <h6>Products</h6>
                 <ul>
                     <li><a href="https://jspreadsheet.com/v8/">Jspreadsheet Pro</a></li>
@@ -444,7 +497,7 @@ chart = Highcharts.chart('container', {
                     <li><a href="https://jsuites.net">jSuites</a></li>
                 </ul>
             </div>
-            <div class="item footer-list">
+            <div class="item shrink-1">
                 <h6>JSS Extensions</h6>
                 <ul>
                     <li><a href="https://jspreadsheet.com/products/charts">Charts</a></li>
