@@ -107,7 +107,7 @@ p {
 .menu ul li a {
     display: block;
     padding: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: black;
     position: relative;
@@ -215,12 +215,6 @@ p {
     font-weight: 600;
 }
 
-.legenda h6{
-    font-size: 1.5rem;
-    font-weight: normal;
-    margin-bottom: 1rem;
-}
-
 .legenda p{
     font-size: 1.2rem;
     font-weight: normal;
@@ -229,33 +223,31 @@ p {
 
 .menu .jbutton-white a {
     border: 0.2rem solid #C41019;
-    padding: 0.8rem;
-    width: 6rem;
-    height: 1.5rem;
+    padding: 1.8rem;
     margin-right: 2rem;
     margin-left: 5rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #C41019;
-    font-size: 1.2rem;
     font-weight: normal;
 }
 
 .menu .jbutton-red a {
     background-color: #C41019;    
-    padding: 1rem;
-    width: 6rem;
-    height: 1.5rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: white;
-    font-size: 1.2rem;
     font-weight: normal;
 }
 
 .input-email{
     margin-top: 5rem;
+}
+
+.input-email input {
+    border-width: 0.2rem;
+    border-color: #5F5F5F;
 }
 
 input {
@@ -323,6 +315,11 @@ input {
 .cell {
     padding: 4rem;
 }
+
+.cell h5 {
+    font-size: 2rem;
+}
+
 .cell p {
     font-size: 1.5rem;
 }
@@ -404,7 +401,7 @@ footer ul, a {
 
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
       .intro-content, .grid,.quit-content, .feat-content, .end-content{
           grid-template-columns: 1fr;
       }
