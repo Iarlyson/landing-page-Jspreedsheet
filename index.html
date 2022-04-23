@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
@@ -25,12 +26,12 @@
             </h1>
             <nav>
                 <ul>
-                    <li><a href="https://jspreadsheet.com/v8/">Documentation</a></li>
-                    <li><a href="https://jspreadsheet.com/v8/1">Examples</a></li>
-                    <li><a href="https://jspreadsheet.com/v8/2">Extensions</a></li>
-                    <li><a href="https://jspreadsheet.com/v8/3">Princing</a></li>
-                    <li class="jbutton-white" ><a href="https://jspreadsheet.com/v8/4">Login</a></li>
-                    <li class="jbutton-red" ><a href="https://jspreadsheet.com/v8/4">Sign up</a></li>
+                    <li><a href="https://jspreadsheet.com/v8" target="_blank">Documentation</a></li>
+                    <li><a href="https://jspreadsheet.com/v8/examples" target="_blank">Examples</a></li>
+                    <li><a href="https://jspreadsheet.com/products/" target="_blank">Extensions</a></li>
+                    <li><a href="https://jspreadsheet.com/v8/pricing" target="_blank">Princing</a></li>
+                    <li class="jbutton-white" ><a href="https://jspreadsheet.com/me/login" target="_blank">Login</a></li>
+                    <li class="jbutton-red" ><a href="https://jspreadsheet.com/me/login" target="_blank">Sign up</a></li>
                 </ul>
                 
             </nav>
@@ -61,22 +62,22 @@
             <h5>Used by</h5>
             <div class="grid">
                 <div class="gallery-img">
-                    <img src="assets/img/syntagium.png" alt=""/>
+                    <a href="https://syntagium.com.au" target="_blank"><img src="assets/img/1.png" alt="Syntagium"/></a>
                 </div>
                 <div class="gallery-img">
-                    <img src="assets/img/BIzzcontrot.svg" alt=""/>
+                    <a href="https://www.bizzcontrol.com/" target="_blank"><img src="assets/img/2.png" alt="BIzzcontrol"/></a>
                 </div>
                 <div class="gallery-img">
-                    <img src="assets/img/metrex.jpg" alt=""/>
+                    <a href="http://metrex.net/" target="_blank"><img src="assets/img/3.png" alt="Metrex"/></a>
                 </div>
                 <div class="gallery-img1">
-                    <img src="assets/img/Prancheta 1.png" alt=""/>
+                    <a href="https://takeofflite.com/" target="_blank"><img src="assets/img/4.png" alt="TakeoffLITE"/></a>
                 </div>
                 <div class="gallery-img">
-                    <img src="assets/img/questrmg.jpg" alt=""/>
+                    <a href="https://www.questrmg.com/" target="_blank"><img src="assets/img/5.png" alt="Quest"/></a>
                 </div>
                 <div class="gallery-img">
-                    <img src="assets/img/figlinq.png" alt=""/>
+                    <a href="https://figlinq.com" target="_blank"><img src="assets/img/6.png" alt="FiglinQ"/></a>
                 </div>
             </div>
         </div>
@@ -89,7 +90,7 @@
                 <p>It has the column property filterOptions,
                     which helps developers overwrite the behavior of a cell based on the values of another cell.</p>
                     <div class="link"> 
-                        <a href="">Learn More -></a>
+                        <a href="https://jspreadsheet.com/v8/examples/data-binding" target="_blank">Learn More -></a>
                     </div>
                     <div class="cell-dep">
                         <h6>Dee Giarratano,</h6>
@@ -106,43 +107,43 @@
 var data = [
     {
       "id":1,
-      "name":"Marcos",
-      "img":"img/nophoto.jpg",
+      "name":"Leo",
+      "img":"assets/img/nophoto.jpg",
       "department":3,
       "extension":"3126",
    },
    {
       "id":2,
-      "name":"Ana",
-      "img":"img/nophoto.jpg",
+      "name":"Clarisse",
+      "img":"assets/img/nophoto.jpg",
       "department":3,
       "extension":"3127",
    },
    {
       "id":3,
-      "name":"Nicolly",
-      "img":"img/nophoto.jpg",
+      "name":"John",
+      "img":"assets/img/nophoto.jpg",
       "department":4,
       "extension":"3128",
    },
    {
       "id":4,
-      "name":"Paulo",
-      "img":"img/nophoto.jpg",
+      "name":"Rafaela",
+      "img":"assets/img/nophoto.jpg",
       "department": "string",
       "extension":"3129",
    },
    {
       "id":5,
-      "name":"Iris",
-      "img":"img/nophoto.jpg",
+      "name":"Nico",
+      "img":"assets/img/nophoto.jpg",
       "department": "string",
       "extension":"3130",
    },
    {
       "id":6,
-      "name":"Iarlyson",
-      "img":"img/nophoto.jpg",
+      "name":"Pierre",
+      "img":"assets/img/nophoto.jpg",
       "department": "string",
       "extension":"3131",
    }
@@ -240,7 +241,7 @@ jspreadsheet(document.getElementById('spreadsheet1'), {
                     the pagination and lazy loading options allow 
                     for higher efficiency when rendering tables.</p>
                     <div class="link"> 
-                        <a href="">Learn More -></a>
+                        <a href="https://jspreadsheet.com/v8/docs/performance" target="_blank">Learn More -></a>
                     </div>
                     
                 <div class="cell-dep">
@@ -255,10 +256,10 @@ jspreadsheet(document.getElementById('spreadsheet1'), {
     <section class="grey-bg section">
         <div class="main-content quit-content">
             <div class="meio-dep">
-                <h2>Highly flexible and customizable</h2>
+                <h2>Flexible and customizable</h2>
                 <p>The advanced integrated tab management system gives users a higher degree of flexibility in their usage.</p>
                 <div class="link"> 
-                    <a href="">Learn More -></a>
+                    <a href="https://jspreadsheet.com/v8/cases/highcharts" target="_blank">Learn More -></a>
                 </div>
 
                 <div class="cell-dep">
@@ -392,55 +393,56 @@ chart = Highcharts.chart('container', {
             </div>
 
     </section>
-    <section class="main-bg section">
-        <h3 class="feat main-content">More features</h3>
+    <section class="main-bg">
+            <h3 class="feat main-content">More features</h3>
         <div class="main-content feat-content">
             <div class="feat-text-content">
                 <div class="cell">
                     <h5>Formula parsing</h5>
                     <p>The upgraded formula engine ensures that the efficiency and accuracy of calculations are enhanced, even when dealing with chained formulas.</p>
                     <div class="link"> 
-                        <a href="">Learn More -></a>
+                        <a href="https://jspreadsheet.com/products/formulas" target="_blank">Learn More -></a>
                     </div>
                 </div>
                 <div class="cell">
                     <h5>Decouple editors</h5>
                     <p>It allows the overwriting of column properties for one specific cell. For example, the table can be configured to render a drop down in one specific cell within a text type column.</p>
                     <div class="link"> 
-                        <a href="">Learn More -></a>
+                        <a href="" target="_blank">Learn More -></a>
                     </div>
                 </div>
                 <div class="cell">
                     <h5>Real-time collaboration</h5>
                     <p>Its real-time spreadsheet online sharing capacity gives multiple users the opportunity for effective collaboration.</p>
                     <div class="link"> 
-                        <a href="">Learn More -></a>
+                        <a href="https://jspreadsheet.com/v8/cases/real-time-spreadsheet" target="_blank">Learn More -></a>
                     </div>
                 </div>
             </div>
             <div class="feat-rigth">
                 <div class="cell">
+
                     <h5>Data persistence</h5>
                     <p>It offers complete support for data persistence. Developers can persist not only data,
                         but also the properties of data tables in a remote server. Data tables can thus be easily 
                         recreated. Stronger integration with remote servers enables better management of record IDs
                         and remote data persistence.</p>
                         <div class="link"> 
-                            <a href="">Learn More -></a>
+                            <a href="https://jspreadsheet.com/v8/docs/persistence" target="_blank">Learn More -></a>
                         </div>
                 </div>
                 <div class="cell">
                     <h5>Export to XLSX</h5>
                     <p>With Jspreasheet you are able to export the data from JSS spreadsheet to a XLSX file.</p>
                     <div class="link"> 
-                        <a href="">Learn More -></a>
+                        <a href="https://jspreadsheet.com/products/export-to-xlsx" target="_blank">Learn More -></a>
                     </div>
                 </div>
                 <div class="cell">
                     <h5>Import from XLSX</h5>
                     <p>With Jspreasheet you are able to import the data from XLSX file to your web-based spreadsheet.</p>
                     <div class="link"> 
-                        <a href="">Learn More -></a>
+                        <a href="https://jspreadsheet.com/products/import-from-xlsx" target="_blank">Learn More -></a>
                     </div>
                 </div>
             </div>
@@ -468,9 +470,9 @@ chart = Highcharts.chart('container', {
                 <ul>
                 <div class="container row"> 
                     <li><h5 class="logo">Jspreadsheet</h5></li>
-                    <li><a href="https://jspreadsheet.com/jspreadsheet/contact">Contact</a></li>
-                    <li><a href="https://jspreadsheet.com/jspreadsheet/terms-and-conditions">Terms and conditions</a></li>
-                    <li><a href="https://jspreadsheet.com/jspreadsheet/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="https://jspreadsheet.com/jspreadsheet/contact" target="_blank">Contact</a></li>
+                    <li><a href="https://jspreadsheet.com/jspreadsheet/terms-and-conditions" target="_blank">Terms and conditions</a></li>
+                    <li><a href="https://jspreadsheet.com/jspreadsheet/privacy-policy" target="_blank">Privacy Policy</a></li>
                 </div>
                 </ul>
             </div>              
@@ -490,21 +492,21 @@ chart = Highcharts.chart('container', {
             <div class="item shrink-1">
                 <h6>Products</h6>
                 <ul>
-                    <li><a href="https://jspreadsheet.com/v8/">Jspreadsheet Pro</a></li>
-                    <li><a href="https://jspreadsheet.com/cloud">Jspreadsheet Cloud</a></li>
-                    <li><a href="https://bossanova.uk/jspreadsheet">Jspreadsheet CE</a></li>
-                    <li><a href="https://lemonadejs.net">LemonadeJS</a></li>
-                    <li><a href="https://jsuites.net">jSuites</a></li>
+                    <li><a href="https://jspreadsheet.com/v8/" target="_blank">Jspreadsheet Pro</a></li>
+                    <li><a href="https://jspreadsheet.com/cloud" target="_blank">Jspreadsheet Cloud</a></li>
+                    <li><a href="https://bossanova.uk/jspreadsheet" target="_blank">Jspreadsheet CE</a></li>
+                    <li><a href="https://lemonadejs.net" target="_blank">LemonadeJS</a></li>
+                    <li><a href="https://jsuites.net" target="_blank">jSuites</a></li>
                 </ul>
             </div>
             <div class="item shrink-1">
                 <h6>JSS Extensions</h6>
                 <ul>
-                    <li><a href="https://jspreadsheet.com/products/charts">Charts</a></li>
-                    <li><a href="https://jspreadsheet.com/products/forms">Forms</a></li>
-                    <li><a href="https://jspreadsheet.com/products/formulas">Formulas</a></li>
-                    <li><a href="https://jspreadsheet.com/products/export-to-xlsx">XLSX exporter</a></li>
-                    <li><a href="https://jspreadsheet.com/products/import-from-xlsx">XLSX importer</a></li>
+                    <li><a href="https://jspreadsheet.com/products/charts" target="_blank">Charts</a></li>
+                    <li><a href="https://jspreadsheet.com/products/forms" target="_blank">Forms</a></li>
+                    <li><a href="https://jspreadsheet.com/products/formulas" target="_blank">Formulas</a></li>
+                    <li><a href="https://jspreadsheet.com/products/export-to-xlsx" target="_blank">XLSX exporter</a></li>
+                    <li><a href="https://jspreadsheet.com/products/import-from-xlsx" target="_blank">XLSX importer</a></li>
                 </ul>
             </div>
         </div>

@@ -3,7 +3,6 @@
     --gap: 3rem;
 }
 
-
 html {
     font-size: 62.5%;
 }
@@ -16,7 +15,7 @@ html {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 
 h2 {
@@ -26,12 +25,15 @@ h2 {
 h3 {
     font-size: 3.5rem;
 }
+
 h4 {
     font-size: 2.5rem;
 }
+
 h5 {
     font-size: 2rem;
 }
+
 h6 {
     font-size: 1.5rem;
 }
@@ -41,7 +43,7 @@ a {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .main-bg{
@@ -61,6 +63,10 @@ p {
 .section {
     min-height: 100vh;
 }
+
+.section-more {
+}
+
 
 
 .menu {
@@ -122,10 +128,7 @@ p {
 
   .quite-img img{
       max-width: 60rem;
-      maxheight: 40rem;
-
   }
-
 
 .intro-content{
     position: relative;
@@ -194,6 +197,7 @@ p {
     grid-template-columns: repeat(6, 1fr);
     gap: var(--gap);
     counter-reset: grid-counter;
+
 }
 
 
@@ -221,6 +225,7 @@ p {
     font-weight: bold;
     color: #C41019;
     font-size: 1.2rem;
+    font-weight: normal;
 
 }
 
@@ -231,12 +236,11 @@ p {
     height: 1.5rem;
     text-align: center;
     font-size: 1.2rem;
-    font-weight: bold;
     color: white;
     font-size: 1.2rem;
+    font-weight: normal;
+
 }
-
-
 
 .input-email{
     margin-top: 3rem;
@@ -256,7 +260,6 @@ input {
     text-align: center;
     color: #FFFFFF;
     font-size: 1.5rem;
-    font-weight: bolder;
 }
 
 .jbutton a {
@@ -265,9 +268,12 @@ input {
 }
 .feat {
     text-align: center;
-    margin: 0rem;
     height: 10vh;
 }
+
+.feat h3 {
+}
+
 
 .dep{
     text-align: center;
@@ -281,7 +287,6 @@ input {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--gap);
-    height: 100vh;
 }
 
 .feat-text-content, .feat-rigth {
@@ -308,6 +313,9 @@ input {
 .cell {
     padding: 4rem;
 }
+.cell p {
+    font-size: 1.5rem;
+}
 
 .link a{
     margin-top: 1rem;
@@ -318,17 +326,13 @@ input {
 }
 
 
-
-
 .bio{
     display: grid;
     grid-template-columns: 0.16fr 0.7fr;
 }
 
 footer{
-    border-top: 0.001rem solid #707070;
 }
-
 
 footer h6 a p{
     margin-bottom: 0.5rem;  
