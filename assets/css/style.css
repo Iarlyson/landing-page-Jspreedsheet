@@ -43,7 +43,7 @@ a {
 }
 
 p {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .main-bg{
@@ -60,11 +60,14 @@ p {
     padding: var(--gap);
 }
 
-.section {
-    min-height: 100vh;
+.titulo-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 10rem;
 }
 
-.section-more {
+.section {
+    min-height: 100vh;
 }
 
 
@@ -83,7 +86,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0;
+    padding-top: 2rem;
     padding-bottom: 0;
 }
 
@@ -170,11 +173,11 @@ p {
 }
 
 .meio-dep h2{
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
 }
 
 .intro-text-content h1 {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .intro-text-content h6 {
@@ -193,6 +196,7 @@ p {
 }
 
 .grid {
+    
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: var(--gap);
@@ -202,9 +206,10 @@ p {
 
 
 .grid img{
-    max-width: 80%; 
-    height: 15rem; 
+    max-width: 100%; 
+    height: 20rem; 
     object-fit: scale-down;
+
 }
 
 
@@ -243,15 +248,14 @@ p {
 }
 
 .input-email{
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 input {
     padding: 1rem;
     width: 35rem;
-    font-weight: bolder;
+    font-weight: normal;
     font-size: 1.5rem;
-
 }
 
 .jbutton {
@@ -321,7 +325,6 @@ input {
     margin-top: 1rem;
     display: block;
     font-size: 1.5rem;
-    font-weight: bolder;
     color: #77A088;
 }
 
@@ -396,6 +399,14 @@ footer ul, a {
     margin-bottom: 5rem;
 
   }
+
+  @media (max-width: 800px) {
+      .intro-content, .grid,.quit-content, .feat-content, .end-content{
+          grid-template-columns: 1fr;
+      }
+
+  }
+
 
 
 
