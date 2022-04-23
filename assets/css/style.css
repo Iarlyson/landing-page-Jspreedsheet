@@ -80,7 +80,6 @@ p {
     right: 0;
     bottom: 0;
     width: 100%;
-    min-height: 25vh;
 }
 
 .menu-content {
@@ -141,11 +140,9 @@ p {
 
 .intro-content{
     position: relative;
-    top: -7rem;
     display: grid;
     grid-template-columns: 1fr 1.1fr;
     gap: var(--gap);
-    height: 80vh;
 }
 
 .quit-content{
@@ -183,7 +180,12 @@ p {
     font-weight: 600; 
 }
 
+.meio-dep-tabela {
+    width: 30%;
+}
+
 .intro-text-content h1 {
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -199,7 +201,6 @@ p {
 }
 
 .grid {
-    
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: var(--gap);
@@ -216,6 +217,7 @@ p {
 
 
 .grid-one-content h5 {
+    margin-top: 12rem;
     text-align: center;
     font-weight: 600;
 }
@@ -407,7 +409,13 @@ footer ul, a {
 
   }
 
-  @media (max-width: 900px) {
+  
+  .close-menu {
+display: none;
+}
+
+
+  @media (max-width: 800px) {
       .intro-content, .grid,.quit-content, .feat-content, .end-content{
           grid-template-columns: 1fr;
       }
@@ -420,6 +428,56 @@ footer ul, a {
 
       .container{
         flex-direction: column;
+      }
+
+      .menu {
+          bottom: 0;
+      }
+
+      .menu-content, .menu-content ul {
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .menu-content{
+          height: 100vh;
+      }
+
+      .menu{
+          display: none;
+      }
+
+      .close-menu {
+          position: fixed;
+          z-index: 2;
+          top: 0;
+          left: 0;
+      }
+
+      .close-menu-label::after {
+          content: '≡';
+          position: fixed;
+          z-index: 2;
+          top: 2rem;
+          right: 2rem;
+          background: red;
+          color: white;
+          font-size: 3rem;
+          line-height: 3rem;
+          width: 3rem;
+          height: 3rem;
+          text-align: center;
+          padding: 0.5rem;
+          cursor: pointer;
+      }
+
+      .close-menu:checked~.menu {
+        display: block;
+      }
+      
+      .close-menu:checked~.close-menu-label::after {
+        display: block;
+        content: '×';
       }
 
 

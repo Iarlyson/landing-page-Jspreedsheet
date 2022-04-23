@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close Menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu">
         <div class="main-content menu-content">
             <h1>
@@ -57,7 +59,7 @@
         </div>
     </div>
 </section>
-<section class="intro main-bg ">
+<section class="main-bg">
     <div class="grid-one">
         <div class="main-content grid-one-content">
             <h5>Used by</h5>
@@ -100,7 +102,7 @@
                              Takeoff Lite would not be the world-class product it is without them. The support is top-notch as well” </p>
                     </div>
         </div>
-            <div class="intro-img">
+            <div class="meio-dep-tabela">
                 
                 <div id="spreadsheet1"></div>
  
@@ -169,24 +171,20 @@ jspreadsheet(document.getElementById('spreadsheet1'), {
                 title: 'Name',
                 type: 'text',
                 name: 'name',
-                width: '140px',
             },
             {
                 title: 'Photo',
                 type: 'image',
                 name: 'img',
-                width: '80px',
                 render: 'round',
             },
             {
                 title: 'Department',
                 name: 'extension',
-                width: '80px'
             },
             {
                 title: 'Extension',
                 name: 'extension',
-                width: '80px'
             },
         ],
     }]
@@ -197,7 +195,7 @@ jspreadsheet(document.getElementById('spreadsheet1'), {
     </section>
     <section class="grey-bg section">
         <div class="main-content quit-content">
-            <div class="intro-img">
+            <div class="meio-dep">
                 <div id="spreadsheet2"></div>
  
                 <script>
@@ -223,8 +221,6 @@ jspreadsheet(document.getElementById('spreadsheet1'), {
                     worksheets: [{
                         data: data,
                         tableOverflow: true,
-                        tableWidth: '800px',
-                        tableHeight: '500px',
                     }],
                     onload: function() {
                         // Final time 
@@ -275,7 +271,7 @@ jspreadsheet(document.getElementById('spreadsheet1'), {
                 </div>
             </div>
             
-            <div class="intro-img">
+            <div class="meio-dep">
                 <div id="spreadsheet3"></div>
  
     <script>
