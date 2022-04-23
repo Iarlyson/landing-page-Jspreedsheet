@@ -108,7 +108,7 @@ p {
     display: block;
     padding: 2rem;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 600;
     color: black;
     position: relative;
 }
@@ -144,7 +144,7 @@ p {
 
 .quit-content{
     position: relative;
-    top: 7rem;
+    top: 5rem;
     display: grid;
     grid-template-columns: 1fr 1.1fr;
     gap: var(--gap);
@@ -175,6 +175,7 @@ p {
 
 .meio-dep h2{
     margin-bottom: 2rem;
+    font-weight: 600; 
 }
 
 .intro-text-content h1 {
@@ -183,8 +184,8 @@ p {
 
 .intro-text-content h6 {
     margin-top: 2rem;
+    font-weight: 600;
 }
-
 
 .grid-one-content {
     display: flex;
@@ -198,7 +199,6 @@ p {
     grid-template-columns: repeat(6, 1fr);
     gap: var(--gap);
     counter-reset: grid-counter;
-
 }
 
 
@@ -207,14 +207,25 @@ p {
     height: 20rem; 
     object-fit: scale-down;
     margin-bottom: 7rem;
-
 }
 
 
 .grid-one-content h5 {
     text-align: center;
+    font-weight: 600;
 }
 
+.legenda h6{
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.legenda p{
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-style: italic;
+}
 
 .menu .jbutton-white a {
     border: 0.2rem solid #C41019;
@@ -229,7 +240,6 @@ p {
     color: #C41019;
     font-size: 1.2rem;
     font-weight: normal;
-
 }
 
 .menu .jbutton-red a {
@@ -242,7 +252,6 @@ p {
     color: white;
     font-size: 1.2rem;
     font-weight: normal;
-
 }
 
 .input-email{
@@ -274,10 +283,6 @@ input {
     height: 10vh;
 }
 
-.feat h3 {
-}
-
-
 .dep{
     text-align: center;
     margin: 0rem;
@@ -305,10 +310,12 @@ input {
 }
 
 .cell-dep h6 {
+    color: #5F5F5F;
     font-size: 1.2rem;
 }
 
 .cell-dep p {
+    color: #5F5F5F;
     margin-top: 2rem;
     font-size: 1.1rem;
 }
@@ -331,9 +338,6 @@ input {
 .bio{
     display: grid;
     grid-template-columns: 0.16fr 0.7fr;
-}
-
-footer{
 }
 
 footer h6 a p{
@@ -404,6 +408,12 @@ footer ul, a {
       .intro-content, .grid,.quit-content, .feat-content, .end-content{
           grid-template-columns: 1fr;
       }
+      .grid img{
+        max-width: 100%; 
+        height: 5rem; 
+        object-fit: scale-down;
+        margin-bottom: 2rem;
+    }
 
       .container{
         flex-direction: column;
