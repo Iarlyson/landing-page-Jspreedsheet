@@ -1,90 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NJ7TQFT');</script>
+    <!-- End Google Tag Manager -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald&display=swap"
+        rel="stylesheet">
     <script src="https://jspreadsheet.com/v8/jspreadsheet.js"></script>
     <script src="https://jsuites.net/v4/jsuites.js"></script>
     <link rel="stylesheet" href="https://jspreadsheet.com/v8/jspreadsheet.css" type="text/css" />
     <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close Menu" role="button">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ7TQFT" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close Menu" role="button" aria-pressed="true">
     <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu">
         <div class="main-content menu-content">
             <h1>
-                <a href=""><img src="assets/img/logo.svg" alt="Logo"/></a>
+                <a href=""><img src="assets/img/logo.svg" alt="Logo" /></a>
             </h1>
             <nav>
                 <ul>
-                    <li><a href="https://jspreadsheet.com/v8" target="_blank">Documentation</a></li>
+                    <li><a href="Fhttps://jspreadsheet.com/v8" target="_blank">Documentation</a></li>
                     <li><a href="https://jspreadsheet.com/v8/examples" target="_blank">Examples</a></li>
                     <li><a href="https://jspreadsheet.com/products/" target="_blank">Extensions</a></li>
                     <li><a href="https://jspreadsheet.com/v8/pricing" target="_blank">Princing</a></li>
-                    <li class="jbutton-white" ><a href="https://jspreadsheet.com/me/login" target="_blank">Login</a></li>
-                    <li class="jbutton-red" ><a href="https://jspreadsheet.com/me/login" target="_blank">Sign up</a></li>
+                    <li class="jbutton-white"><a href="https://jspreadsheet.com/me/login" target="_blank">Login</a></li>
+                    <li class="jbutton-red"><a href="https://jspreadsheet.com/me/login" target="_blank">Sign up</a></li>
                 </ul>
-                
+
             </nav>
-            </div>
+        </div>
     </aside>
 
     <section class="intro main-bg ">
         <div class="main-content intro-content">
             <div class="intro-text-content">
-            <h1>Devs don’t need to start from the scratch with Jspreadsheet</h1>
-            <p>Save your development time. Jspreadsheet is the Vanilla JavaScript 
-                Plugin which gives you all the tools to create excepcional web-based
-                 applications with spreadsheet-like controls.</p>
-            <h6>Compatible with React, Angular, Vue JS and Chart JS.</h6>
-            <div class="input-email">
-                <input type="email" name="" id="" placeholder="name@company.com"> 
-                <button  type="button"  class="jbutton" >Start Free Trial </button>
-            </div>
+                <h1>Devs don’t need to start from the scratch with Jspreadsheet</h1>
+                <p>Save your development time. Jspreadsheet is the Vanilla JavaScript
+                    Plugin which gives you all the tools to create excepcional web-based
+                    applications with spreadsheet-like controls.</p>
+                <h6>Compatible with React, Angular, Vue JS and Chart JS.</h6>
+                <div class="input-email">
+                    <input type="email" name="email" id="email" placeholder="name@company.com">
+                    <button type="button" class="jbutton">Start Free Trial </button>
+                </div>
 
+            </div>
+            <div class="intro-img">
+                <div id='spreadsheet-animation2' style='width:100%; max-width: 520px;'></div>
+            </div>
         </div>
-        <div class="intro-img">
-            <div id='spreadsheet-animation2' style='width:100%; max-width: 520px;'></div>
-        </div>
-    </div>
-</section>
-<section class="main-bg">
-    <div class="grid-one">
-        <div class="main-content grid-one-content">
-            <h5>Used by</h5>
-            <div class="grid">
-                <div class="gallery-img">
-                    <a href="https://figlinq.com" target="_blank"><img src="assets/img/1.png" alt="FiglinQ"/></a>
-                </div>
-                <div class="gallery-img">
-                    <a href="https://syntagium.com.au" target="_blank"><img src="assets/img/2.png" alt="Syntagium"/></a>
-                </div>
-                <div class="gallery-img1">
-                    <a href="https://takeofflite.com/" target="_blank"><img src="assets/img/3.png" alt="TakeoffLITE"/></a>
-                </div>
-                <div class="gallery-img">
-                    <a href="https://www.questrmg.com/" target="_blank"><img src="assets/img/4.png" alt="Quest"/></a>
-                </div>
-                <div class="gallery-img">
-                    <a href="http://metrex.net/" target="_blank"><img src="assets/img/5.png" alt="Metrex"/></a>
-                </div>
-                <div class="gallery-img">
-                    <a href="https://www.bizzcontrol.com/" target="_blank"><img src="assets/img/6.png" alt="BIzzcontrol"/></a>
+    </section>
+    <section class="main-bg">
+        <div class="grid-one">
+            <div class="main-content grid-one-content">
+                <h5>Used by</h5>
+                <div class="grid">
+                    <div class="gallery-img">
+                        <a href="https://figlinq.com" target="_blank"><img src="assets/img/1.png" alt="FiglinQ" /></a>
+                    </div>
+                    <div class="gallery-img">
+                        <a href="https://syntagium.com.au" target="_blank"><img src="assets/img/2.png"
+                                alt="Syntagium" /></a>
+                    </div>
+                    <div class="gallery-img1">
+                        <a href="https://takeofflite.com/" target="_blank"><img src="assets/img/3.png"
+                                alt="TakeoffLITE" /></a>
+                    </div>
+                    <div class="gallery-img">
+                        <a href="https://www.questrmg.com/" target="_blank"><img src="assets/img/4.png"
+                                alt="Quest" /></a>
+                    </div>
+                    <div class="gallery-img">
+                        <a href="http://metrex.net/" target="_blank"><img src="assets/img/5.png" alt="Metrex" /></a>
+                    </div>
+                    <div class="gallery-img">
+                        <a href="https://www.bizzcontrol.com/" target="_blank"><img src="assets/img/6.png"
+                                alt="BIzzcontrol" /></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
     <section class="grey-bg section">
         <div class="main-content quit-content">
@@ -92,104 +113,105 @@
                 <h2>Filter options</h2>
                 <p>It has the column property filterOptions,
                     which helps developers overwrite the behavior of a cell based on the values of another cell.</p>
-                    <div class="link"> 
-                        <a href="https://jspreadsheet.com/v8/examples/data-binding" target="_blank">Learn More ></a>
-                    </div>
-                    <div class="cell-dep">
-                        <h6>Dee Giarratano,</h6>
-                        <h6>CEO - Take off Lite</h6>
-                        <p>“JSpreadsheet has been instrumental in our success as a company.
-                             Takeoff Lite would not be the world-class product it is without them. The support is top-notch as well” </p>
-                    </div>
-        </div>
+                <div class="link">
+                    <a href="https://jspreadsheet.com/v8/examples/data-binding" target="_blank">Learn More ></a>
+                </div>
+                <div class="cell-dep">
+                    <h6>Dee Giarratano,</h6>
+                    <h6>CEO - Take off Lite</h6>
+                    <p>“JSpreadsheet has been instrumental in our success as a company.
+                        Takeoff Lite would not be the world-class product it is without them. The support is top-notch
+                        as well” </p>
+                </div>
+            </div>
             <div class="meio-dep-tabela">
-                
+
                 <div id="spreadsheet1"></div>
- 
-<script>
-var data = [
-    {
-      "id":1,
-      "name":"Leo",
-      "img":"assets/img/persona/1.png",
-      "department":3,
-      "extension":"3126",
-   },
-   {
-      "id":2,
-      "name":"Clarisse",
-      "img":"assets/img/persona/2.png",
-      "department":3,
-      "extension":"3127",
-   },
-   {
-      "id":3,
-      "name":"John",
-      "img":"assets/img/persona/3.png",
-      "department":4,
-      "extension":"3128",
-   },
-   {
-      "id":4,
-      "name":"Rafaela",
-      "img":"assets/img/persona/4.png",
-      "department": "string",
-      "extension":"3129",
-   },
-   {
-      "id":5,
-      "name":"Maria",
-      "img":"assets/img/persona/5.png",
-      "department": "string",
-      "extension":"3130",
-   },
-   {
-      "id":6,
-      "name":"Pierre",
-      "img":"assets/img/persona/6.png",
-      "department": "string",
-      "extension":"3131",
-   }
-]
- 
-// Create the spreadsheet
-jspreadsheet(document.getElementById('spreadsheet1'), {
-    worksheets: [{
-        data: data,
-        minDimensions: [5, 5],
-        worksheetName: 'Employees',
-        columnDrag: false,
-        columns: [
-            {
-                title: 'Id',
-                type: 'autonumber',
-                name: 'id',
-                readOnly: true,
-                primaryKey: true,
-            },
-            {
-                title: 'Name',
-                type: 'text',
-                name: 'name',
-            },
-            {
-                title: 'Photo',
-                type: 'image',
-                name: 'img',
-                render: 'round',
-            },
-            {
-                title: 'Department',
-                name: 'extension',
-            },
-            {
-                title: 'Extension',
-                name: 'extension',
-            },
-        ],
-    }]
-});
-</script>
+
+                <script>
+                    var data = [
+                        {
+                            "id": 1,
+                            "name": "Leo",
+                            "img": "assets/img/persona/1.png",
+                            "department": 3,
+                            "extension": "3126",
+                        },
+                        {
+                            "id": 2,
+                            "name": "Clarisse",
+                            "img": "assets/img/persona/2.png",
+                            "department": 3,
+                            "extension": "3127",
+                        },
+                        {
+                            "id": 3,
+                            "name": "John",
+                            "img": "assets/img/persona/3.png",
+                            "department": 4,
+                            "extension": "3128",
+                        },
+                        {
+                            "id": 4,
+                            "name": "Rafaela",
+                            "img": "assets/img/persona/4.png",
+                            "department": "string",
+                            "extension": "3129",
+                        },
+                        {
+                            "id": 5,
+                            "name": "Maria",
+                            "img": "assets/img/persona/5.png",
+                            "department": "string",
+                            "extension": "3130",
+                        },
+                        {
+                            "id": 6,
+                            "name": "Pierre",
+                            "img": "assets/img/persona/6.png",
+                            "department": "string",
+                            "extension": "3131",
+                        }
+                    ]
+
+                    // Create the spreadsheet
+                    jspreadsheet(document.getElementById('spreadsheet1'), {
+                        worksheets: [{
+                            data: data,
+                            minDimensions: [5, 5],
+                            worksheetName: 'Employees',
+                            columnDrag: false,
+                            columns: [
+                                {
+                                    title: 'Id',
+                                    type: 'autonumber',
+                                    name: 'id',
+                                    readOnly: true,
+                                    primaryKey: true,
+                                },
+                                {
+                                    title: 'Name',
+                                    type: 'text',
+                                    name: 'name',
+                                },
+                                {
+                                    title: 'Photo',
+                                    type: 'image',
+                                    name: 'img',
+                                    render: 'round',
+                                },
+                                {
+                                    title: 'Department',
+                                    name: 'extension',
+                                },
+                                {
+                                    title: 'Extension',
+                                    name: 'extension',
+                                },
+                            ],
+                        }]
+                    });
+                </script>
             </div>
         </div>
     </section>
@@ -197,59 +219,60 @@ jspreadsheet(document.getElementById('spreadsheet1'), {
         <div class="main-content quit-content">
             <div class="meio-dep">
                 <div id="spreadsheet2"></div>
- 
+
                 <script>
-                // Set the JSS spreadsheet license
-                jspreadsheet.setLicense('OTQ4ZTI1ZDdhNWE0MWY5M2VkNTA4ZmJhOTcwMTQwYTQ4MWZjNmFkYWI1NmFjMGUxNzcyNTAxZmE5ODY3MzkyNTk1NjMyM2E4Y2U0ZDUyZGU2ZDJhODA1MGY0ZmEyYzY5MjUwMzg3MzVjN2Y1NDg2YjQ1ZjkxMjM4NWI1N2VmZDcsZXlKdVlXMWxJam9pY0dGMWJDNW9iMlJsYkNJc0ltUmhkR1VpT2pFMk9ERXhOamMyTURBc0ltUnZiV0ZwYmlJNld5SnFjMmhsYkd3dWJtVjBJaXdpYW5Od2NtVmhaSE5vWldWMExtTnZiU0lzSW1OellpNWhjSEFpTENKMVpTNWpiMjB1WW5JaUxDSjFibWwwWldRdVpXUjFZMkYwYVc5dUlpd2ljMkZ2Y205amF5NWpiMjBpTENKMVpTNWpiMjB1WW5JaUxDSjFibWwwWldRdVpXUjFZMkYwYVc5dUlpd2liRzlqWVd4b2IzTjBJbDBzSW5Cc1lXNGlPaUl6SWl3aWMyTnZjR1VpT2xzaWRqY2lMQ0oyT0NJc0luQmhjbk5sY2lJc0luTm9aV1YwY3lJc0ltWnZjbTF6SWl3aWNtVnVaR1Z5SWl3aVptOXliWFZzWVNJc0ltTm9ZWEowY3lJc0ltWnZjbTF6SWl3aVptOXliWFZzWVNJc0luSmxibVJsY2lJc0luQmhjbk5sY2lJc0ltbHRjRzl5ZEdWeUlsMTk=');
-                 
-                // Data
-                var data = [];
-                 
-                // Create the data
-                for (var j = 0; j < 10; j++) {
-                    data[j] = [];
-                    for (var i = 0; i < 6; i++) {
-                        data[j][i] = jspreadsheet.helpers.getColumnNameFromCoords(i, j);
+                    // Set the JSS spreadsheet license
+                    jspreadsheet.setLicense('OTQ4ZTI1ZDdhNWE0MWY5M2VkNTA4ZmJhOTcwMTQwYTQ4MWZjNmFkYWI1NmFjMGUxNzcyNTAxZmE5ODY3MzkyNTk1NjMyM2E4Y2U0ZDUyZGU2ZDJhODA1MGY0ZmEyYzY5MjUwMzg3MzVjN2Y1NDg2YjQ1ZjkxMjM4NWI1N2VmZDcsZXlKdVlXMWxJam9pY0dGMWJDNW9iMlJsYkNJc0ltUmhkR1VpT2pFMk9ERXhOamMyTURBc0ltUnZiV0ZwYmlJNld5SnFjMmhsYkd3dWJtVjBJaXdpYW5Od2NtVmhaSE5vWldWMExtTnZiU0lzSW1OellpNWhjSEFpTENKMVpTNWpiMjB1WW5JaUxDSjFibWwwWldRdVpXUjFZMkYwYVc5dUlpd2ljMkZ2Y205amF5NWpiMjBpTENKMVpTNWpiMjB1WW5JaUxDSjFibWwwWldRdVpXUjFZMkYwYVc5dUlpd2liRzlqWVd4b2IzTjBJbDBzSW5Cc1lXNGlPaUl6SWl3aWMyTnZjR1VpT2xzaWRqY2lMQ0oyT0NJc0luQmhjbk5sY2lJc0luTm9aV1YwY3lJc0ltWnZjbTF6SWl3aWNtVnVaR1Z5SWl3aVptOXliWFZzWVNJc0ltTm9ZWEowY3lJc0ltWnZjbTF6SWl3aVptOXliWFZzWVNJc0luSmxibVJsY2lJc0luQmhjbk5sY2lJc0ltbHRjRzl5ZEdWeUlsMTk=');
+
+                    // Data
+                    var data = [];
+
+                    // Create the data
+                    for (var j = 0; j < 10; j++) {
+                        data[j] = [];
+                        for (var i = 0; i < 6; i++) {
+                            data[j][i] = jspreadsheet.helpers.getColumnNameFromCoords(i, j);
+                        }
                     }
-                }
-                 
-                // Initial time before creating the table
-                var s = Date.now();
-                 
-                // Create the table
-                jspreadsheet(document.getElementById('spreadsheet2'), {
-                    worksheets: [{
-                        data: data,
-                        tableOverflow: true,
-                    }],
-                    onload: function() {
-                        // Final time 
-                        var e = Date.now();
-                        // Update console
-                        document.getElementById('console').innerText = 'The table was created in: ' + (e - s) + 'ms';
-                    },
-                    parseFormulas: false,
-                })
+
+                    // Initial time before creating the table
+                    var s = Date.now();
+
+                    // Create the table
+                    jspreadsheet(document.getElementById('spreadsheet2'), {
+                        worksheets: [{
+                            data: data,
+                            tableOverflow: true,
+                        }],
+                        onload: function () {
+                            // Final time 
+                            var e = Date.now();
+                            // Update console
+                            document.getElementById('console').innerText = 'The table was created in: ' + (e - s) + 'ms';
+                        },
+                        parseFormulas: false,
+                    })
                 </script>
                 <div class="legenda">
                     <p>20 columns x 50000 rows (one million cells)</p>
                     <p>The table was created in: 56ms</p>
                 </div>
-                            </div>
+            </div>
             <div class="meio-dep">
                 <h2>Manage thousands of data base records in an instant</h2>
-                <p>With a new DOM management engine, 
-                    the pagination and lazy loading options allow 
+                <p>With a new DOM management engine,
+                    the pagination and lazy loading options allow
                     for higher efficiency when rendering tables.</p>
-                    <div class="link"> 
-                        <a href="https://jspreadsheet.com/v8/docs/performance" target="_blank">Learn More ></a>
-                    </div>
-                    
+                <div class="link">
+                    <a href="https://jspreadsheet.com/v8/docs/performance" target="_blank">Learn More ></a>
+                </div>
+
                 <div class="cell-dep">
                     <h6>Dana Stoesz,</h6>
                     <h6>Coder - Metrex</h6>
                     <p>“The latest version of Jspreadsheet is a powerful tool, providing an excellent
-                         front end for our spreadsheet interface. The Jspreadsheet team is helpful and quick to respond.”</p>
+                        front end for our spreadsheet interface. The Jspreadsheet team is helpful and quick to respond.”
+                    </p>
                 </div>
             </div>
         </div>
@@ -258,8 +281,9 @@ jspreadsheet(document.getElementById('spreadsheet1'), {
         <div class="main-content quit-content">
             <div class="meio-dep">
                 <h2>Flexible and customizable</h2>
-                <p>The advanced integrated tab management system gives users a higher degree of flexibility in their usage.</p>
-                <div class="link"> 
+                <p>The advanced integrated tab management system gives users a higher degree of flexibility in their
+                    usage.</p>
+                <div class="link">
                     <a href="https://jspreadsheet.com/v8/cases/highcharts" target="_blank">Learn More ></a>
                 </div>
 
@@ -267,101 +291,102 @@ jspreadsheet(document.getElementById('spreadsheet1'), {
                     <h6>Lode Cools,</h6>
                     <h6>CTO & Co-founder - Bizzcontrol</h6>
 
-                    <p>“We vetted 10 JS spreadsheet components and we must say that jspreadsheet comes out as the best”</p>
+                    <p>“We vetted 10 JS spreadsheet components and we must say that jspreadsheet comes out as the best”
+                    </p>
                 </div>
             </div>
-            
+
             <div class="meio-dep">
                 <div id="spreadsheet3"></div>
- 
-    <script>
-    var data = [
-        ['Tokyo', 7.0, 6.9, 9.5, 14.5, 18.2, 21.5],
-        ['New York', -0.2, 0.8, 5.7, 11.3, 17.0, 22.0],
-        ['Berlin', -0.9, 0.6, 3.5, 8.4, 13.5, 17.0],
-        ['London', 3.9, 4.2, 5.7, 8.5, 11.9, 15.2],
-    ];
- 
-    var update = function (instance, cell, x, y, value) {
-    // If the related series does not exists create a new one
-    if (! chart.series[y]) {
-        // Create a new series row
-        var row = [];
-        for (i = 1; i < data[y].length; i++) {
-            row.push(parseFloat(data[y][i]));
-        }
-        // Append new series to the chart
-        chart.addSeries({ name:data[y][0], data:row });
-    } else {
-        if (x == 0) {
-            // Update legend
-            chart.series[y].update({ name:value });
-        } else {
-            // Update chart data
-            chart.series[y].data[x-1].update({ y:parseFloat(value) });
-        }
-    }
-}
- 
-jspreadsheet(document.getElementById('spreadsheet3'), {
-    worksheets: [{
-        data:data,
-        columns: [
-            { type: 'text', width:'200' },
-        ],
-    }],
-    onchange: update,
-});
- 
-var chart = null;
- 
-chart = Highcharts.chart('container', {
-    title: {
-        text: 'Monthly Average Temperature',
-        x: -20 //center
-    },
-    subtitle: {
-        text: 'Source: WorldClimate.com',
-        x: -20
-    },
-    xAxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    },
-    yAxis: {
-        title: {
-            text: 'Temperature (°C)'
-        },
-        plotLines: [{
-            value: 0,
-            width: 1,
-            color: '#808080'
-        }]
-    },
-    tooltip: {
-        valueSuffix: '°C'
-    },
-    legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'middle',
-        borderWidth: 0
-    },
-    series: [{
-        name: 'Tokyo',
-        data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-    }, {
-        name: 'New York',
-        data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
-    }, {
-        name: 'Berlin',
-        data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
-    }, {
-        name: 'London',
-        data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
-    }]
-});
-</script>
+
+                <script>
+                    var data = [
+                        ['Tokyo', 7.0, 6.9, 9.5, 14.5, 18.2, 21.5],
+                        ['New York', -0.2, 0.8, 5.7, 11.3, 17.0, 22.0],
+                        ['Berlin', -0.9, 0.6, 3.5, 8.4, 13.5, 17.0],
+                        ['London', 3.9, 4.2, 5.7, 8.5, 11.9, 15.2],
+                    ];
+
+                    var update = function (instance, cell, x, y, value) {
+                        // If the related series does not exists create a new one
+                        if (!chart.series[y]) {
+                            // Create a new series row
+                            var row = [];
+                            for (i = 1; i < data[y].length; i++) {
+                                row.push(parseFloat(data[y][i]));
+                            }
+                            // Append new series to the chart
+                            chart.addSeries({ name: data[y][0], data: row });
+                        } else {
+                            if (x == 0) {
+                                // Update legend
+                                chart.series[y].update({ name: value });
+                            } else {
+                                // Update chart data
+                                chart.series[y].data[x - 1].update({ y: parseFloat(value) });
+                            }
+                        }
+                    }
+
+                    jspreadsheet(document.getElementById('spreadsheet3'), {
+                        worksheets: [{
+                            data: data,
+                            columns: [
+                                { type: 'text', width: '200' },
+                            ],
+                        }],
+                        onchange: update,
+                    });
+
+                    var chart = null;
+
+                    chart = Highcharts.chart('container', {
+                        title: {
+                            text: 'Monthly Average Temperature',
+                            x: -20 //center
+                        },
+                        subtitle: {
+                            text: 'Source: WorldClimate.com',
+                            x: -20
+                        },
+                        xAxis: {
+                            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                        },
+                        yAxis: {
+                            title: {
+                                text: 'Temperature (°C)'
+                            },
+                            plotLines: [{
+                                value: 0,
+                                width: 1,
+                                color: '#808080'
+                            }]
+                        },
+                        tooltip: {
+                            valueSuffix: '°C'
+                        },
+                        legend: {
+                            layout: 'vertical',
+                            align: 'right',
+                            verticalAlign: 'middle',
+                            borderWidth: 0
+                        },
+                        series: [{
+                            name: 'Tokyo',
+                            data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+                        }, {
+                            name: 'New York',
+                            data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                        }, {
+                            name: 'Berlin',
+                            data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                        }, {
+                            name: 'London',
+                            data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+                        }]
+                    });
+                </script>
             </div>
         </div>
 
@@ -369,7 +394,7 @@ chart = Highcharts.chart('container', {
             <div class="main-content quit-content">
                 <div class="intro-text-content">
                     <div class="quite-img">
-                        <img src="assets/img/image.png" alt="Technical support"/>
+                        <img src="assets/img/image.png" alt="Technical support" />
                     </div>
 
                 </div>
@@ -383,182 +408,201 @@ chart = Highcharts.chart('container', {
 
                         <p>“It’s truly remarkable and nothing short of instrumental how this this tool has
                             permitted the construction and implementation of a complete Spreadsheet solution
-                            within our Customer Portal, while reducing development time and keeping costs 
-                            at bay - certainly making this tool essential for improving ROI and  time-to-market.
+                            within our Customer Portal, while reducing development time and keeping costs
+                            at bay - certainly making this tool essential for improving ROI and time-to-market.
                             It is worth mentioning how well prepared and eager to provide assistance their technical
-                            support team is, either by email communications or directly through Google Meet and 
+                            support team is, either by email communications or directly through Google Meet and
                             Zoom conference calls!”</p>
                     </div>
 
                 </div>
             </div>
 
-    </section>
-    <section class="main-bg">
+        </section>
+        <section class="main-bg">
             <h3 class="feat titulo-content">More features</h3>
-        <div class="main-content feat-content">
-            <div class="feat-text-content">
-                <div class="cell">
-                    <h5>Formula parsing</h5>
-                    <p>The upgraded formula engine ensures that the efficiency and accuracy of calculations are enhanced, even when dealing with chained formulas.</p>
-                    <div class="link"> 
-                        <a href="https://jspreadsheet.com/products/formulas" target="_blank">Learn More ></a>
+            <div class="main-content feat-content">
+                <div class="feat-text-content">
+                    <div class="cell">
+                        <h5>Formula parsing</h5>
+                        <p>The upgraded formula engine ensures that the efficiency and accuracy of calculations are
+                            enhanced, even when dealing with chained formulas.</p>
+                        <div class="link">
+                            <a href="https://jspreadsheet.com/products/formulas" target="_blank">Learn More ></a>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <h5>Decouple editors</h5>
+                        <p>It allows the overwriting of column properties for one specific cell. For example, the table
+                            can be configured to render a drop down in one specific cell within a text type column.</p>
+                        <div class="link">
+                            <a href="https://jspreadsheet.com/v8/docs/editors" target="_blank">Learn More ></a>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <h5>Real-time collaboration</h5>
+                        <p>Its real-time spreadsheet online sharing capacity gives multiple users the opportunity for
+                            effective collaboration.</p>
+                        <div class="link">
+                            <a href="https://jspreadsheet.com/v8/cases/real-time-spreadsheet" target="_blank">Learn More
+                                ></a>
+                        </div>
                     </div>
                 </div>
-                <div class="cell">
-                    <h5>Decouple editors</h5>
-                    <p>It allows the overwriting of column properties for one specific cell. For example, the table can be configured to render a drop down in one specific cell within a text type column.</p>
-                    <div class="link"> 
-                        <a href="https://jspreadsheet.com/v8/docs/editors" target="_blank">Learn More ></a>
-                    </div>
-                </div>
-                <div class="cell">
-                    <h5>Real-time collaboration</h5>
-                    <p>Its real-time spreadsheet online sharing capacity gives multiple users the opportunity for effective collaboration.</p>
-                    <div class="link"> 
-                        <a href="https://jspreadsheet.com/v8/cases/real-time-spreadsheet" target="_blank">Learn More ></a>
-                    </div>
-                </div>
-            </div>
-            <div class="feat-rigth">
-                <div class="cell">
+                <div class="feat-rigth">
+                    <div class="cell">
 
-                    <h5>Data persistence</h5>
-                    <p>It offers complete support for data persistence. Developers can persist not only data,
-                        but also the properties of data tables in a remote server. Data tables can thus be easily 
-                        recreated. Stronger integration with remote servers enables better management of record IDs
-                        and remote data persistence.</p>
-                        <div class="link"> 
+                        <h5>Data persistence</h5>
+                        <p>It offers complete support for data persistence. Developers can persist not only data,
+                            but also the properties of data tables in a remote server. Data tables can thus be easily
+                            recreated. Stronger integration with remote servers enables better management of record IDs
+                            and remote data persistence.</p>
+                        <div class="link">
                             <a href="https://jspreadsheet.com/v8/docs/persistence" target="_blank">Learn More ></a>
                         </div>
-                </div>
-                <div class="cell">
-                    <h5>Export to XLSX</h5>
-                    <p>With Jspreasheet you are able to export the data from JSS spreadsheet to a XLSX file.</p>
-                    <div class="link"> 
-                        <a href="https://jspreadsheet.com/products/export-to-xlsx" target="_blank">Learn More ></a>
+                    </div>
+                    <div class="cell">
+                        <h5>Export to XLSX</h5>
+                        <p>With Jspreasheet you are able to export the data from JSS spreadsheet to a XLSX file.</p>
+                        <div class="link">
+                            <a href="https://jspreadsheet.com/products/export-to-xlsx" target="_blank">Learn More ></a>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <h5>Import from XLSX</h5>
+                        <p>With Jspreasheet you are able to import the data from XLSX file to your web-based
+                            spreadsheet.</p>
+                        <div class="link">
+                            <a href="https://jspreadsheet.com/products/import-from-xlsx" target="_blank">Learn More
+                                ></a>
+                        </div>
                     </div>
                 </div>
-                <div class="cell">
-                    <h5>Import from XLSX</h5>
-                    <p>With Jspreasheet you are able to import the data from XLSX file to your web-based spreadsheet.</p>
-                    <div class="link"> 
-                        <a href="https://jspreadsheet.com/products/import-from-xlsx" target="_blank">Learn More ></a>
+            </div>
+        </section>
+        <section class="grey-bg">
+            <div class="main-content end-content">
+                <div class="intro-text-content">
+                    <h4>Create applications with spreadsheet-like controls</h4>
+                    <div class="input-email">
+                        <input type="email" name="email2" id="email2" placeholder="name@company.com">
+                        <button type="button" class="jbutton">Start Free Trial </button>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="grey-bg">
-        <div class="main-content end-content">
-            <div class="intro-text-content">
-                <h4>Create applications with spreadsheet-like controls</h4>
-                <div class="input-email">
-                    <input type="email" name="" id="" placeholder="name@company.com"> 
-                    <button  type="button"  class="jbutton" >Start Free Trial </button>
+                <div class="intro-img">
+                    <div id='spreadsheet-animation1' style='width:100%; max-width: 520px;'></div>
                 </div>
             </div>
-            <div class="intro-img">
-                <div id='spreadsheet-animation1' style='width:100%; max-width: 520px;'></div>
-            </div>
-        </div>
         </section>
         <footer class="main-bg">
-            <div class="main-content container row-nowrap footer">
+            <div class="rodape-content container row-nowrap footer">
 
-
-            <div class="item shrink-1">
-                <ul>
-                <div class="container row"> 
-                    <li><h5 class="logo">Jspreadsheet</h5></li>
-                    <li><a href="https://jspreadsheet.com/jspreadsheet/contact" target="_blank">Contact</a></li>
-                    <li><a href="https://jspreadsheet.com/jspreadsheet/terms-and-conditions" target="_blank">Terms and conditions</a></li>
-                    <li><a href="https://jspreadsheet.com/jspreadsheet/privacy-policy" target="_blank">Privacy Policy</a></li>
+                <div class="item shrink-1">
+                    <ul class="container row">
+                        <li>
+                            <h5><span class="logo-string1">Jspread</span><span class="logo-string2">sheet</span>
+                            </h5>
+                        </li>
+                        <li><a class="menu-bootom" href="https://jspreadsheet.com/jspreadsheet/contact"
+                                target="_blank">Contact</a></li>
+                        <li><a class="menu-bootom" href="https://jspreadsheet.com/jspreadsheet/terms-and-conditions"
+                                target="_blank">Terms and conditions</a></li>
+                        <li><a href="https://jspreadsheet.com/jspreadsheet/privacy-policy" target="_blank">Privacy
+                                Policy</a></li>
+                    </ul>
                 </div>
-                </ul>
-            </div>              
-            
-            <div class="item shrink-1">
-                <h6>Newsletter</h6>
-                <p>Tech news, tips and technical advice.</p>
-                    <form action="https://bossanova.us20.list-manage.com/subscribe/post?u=f9b5adf8223e3d5a8f575b0bb&amp;id=37f97a936c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+
+                <div class="item shrink-1">
+                    <h6>Newsletter</h6>
+                    <p>Tech news, tips and technical advice.</p>
+                    <form
+                        action="https://bossanova.us20.list-manage.com/subscribe/post?u=f9b5adf8223e3d5a8f575b0bb&amp;id=37f97a936c"
+                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                        target="_blank" novalidate="novalidate">
                         <div class="mc-field-group">
-                            <input type="email" value="" name="EMAIL" id="mce-EMAIL" aria-required="true" class="email-footer"> 
-                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="jbutton-dark">
+                            <input type="email" value="" name="EMAIL" id="mce-EMAIL" aria-required="true"
+                                class="email-footer">
+                            <button type="submit"  name="subscribe" id="mc-embedded-subscribe"
+                                class="jbutton-dark">Subscribe</button>
                         </div>
                     </form>
-                <h6>Technical support</h6>
-                <a href="mailton:contact@jspreadsheet.com"><p>contact@jspreadsheet.com</p></a>
+                    <h6>Technical support</h6>
+                    <a href="mailton:contact@jspreadsheet.com">
+                        <p>contact@jspreadsheet.com</p>
+                    </a>
+                </div>
+                <div class="item shrink-1">
+                    <h6>Products</h6>
+                    <ul>
+                        <li><a href="https://jspreadsheet.com/v8/" target="_blank">Jspreadsheet Pro</a></li>
+                        <li><a href="https://jspreadsheet.com/cloud" target="_blank">Jspreadsheet Cloud</a></li>
+                        <li><a href="https://bossanova.uk/jspreadsheet" target="_blank">Jspreadsheet CE</a></li>
+                        <li><a href="https://lemonadejs.net" target="_blank">LemonadeJS</a></li>
+                        <li><a href="https://jsuites.net" target="_blank">jSuites</a></li>
+                    </ul>
+                </div>
+                <div class="item shrink-1">
+                    <h6>JSS Extensions</h6>
+                    <ul>
+                        <li><a href="https://jspreadsheet.com/products/charts" target="_blank">Charts</a></li>
+                        <li><a href="https://jspreadsheet.com/products/forms" target="_blank">Forms</a></li>
+                        <li><a href="https://jspreadsheet.com/products/formulas" target="_blank">Formulas</a></li>
+                        <li><a href="https://jspreadsheet.com/products/export-to-xlsx" target="_blank">XLSX exporter</a>
+                        </li>
+                        <li><a href="https://jspreadsheet.com/products/import-from-xlsx" target="_blank">XLSX
+                                importer</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="item shrink-1">
-                <h6>Products</h6>
-                <ul>
-                    <li><a href="https://jspreadsheet.com/v8/" target="_blank">Jspreadsheet Pro</a></li>
-                    <li><a href="https://jspreadsheet.com/cloud" target="_blank">Jspreadsheet Cloud</a></li>
-                    <li><a href="https://bossanova.uk/jspreadsheet" target="_blank">Jspreadsheet CE</a></li>
-                    <li><a href="https://lemonadejs.net" target="_blank">LemonadeJS</a></li>
-                    <li><a href="https://jsuites.net" target="_blank">jSuites</a></li>
-                </ul>
-            </div>
-            <div class="item shrink-1">
-                <h6>JSS Extensions</h6>
-                <ul>
-                    <li><a href="https://jspreadsheet.com/products/charts" target="_blank">Charts</a></li>
-                    <li><a href="https://jspreadsheet.com/products/forms" target="_blank">Forms</a></li>
-                    <li><a href="https://jspreadsheet.com/products/formulas" target="_blank">Formulas</a></li>
-                    <li><a href="https://jspreadsheet.com/products/export-to-xlsx" target="_blank">XLSX exporter</a></li>
-                    <li><a href="https://jspreadsheet.com/products/import-from-xlsx" target="_blank">XLSX importer</a></li>
-                </ul>
-            </div>
-        </div>
         </footer>
 
     </section>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lottie-web@5.8.1/build/player/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.8.1/build/player/lottie.min.js"></script>
     <!-- Smartsupp Live Chat script -->
-<script type="text/javascript">
-    var _smartsupp = _smartsupp || {};
-    _smartsupp.key = '8d4e5889ed50695aba8dc576aa3336999032de1b';
-    window.smartsupp||(function(d) {
-      var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-      s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-      c.type='text/javascript';c.charset='utf-8';c.async=true;
-      c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-    })(document);
+    <script>
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = '8d4e5889ed50695aba8dc576aa3336999032de1b';
+        window.smartsupp || (function (d) {
+            var s, c, o = smartsupp = function () { o._.push(arguments) }; o._ = [];
+            s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
+            c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
+            c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
+        })(document);
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             var anim;
             var animData = {
-              container: document.getElementById('spreadsheet-animation1'),
-              renderer: 'svg',
-              loop: true,
-              autoplay: true,
-              rendererSettings: {
-                progressiveLoad: false,
-              },
-              path: 'spreadsheet-cloud.json'
+                container: document.getElementById('spreadsheet-animation1'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                rendererSettings: {
+                    progressiveLoad: false,
+                },
+                path: 'spreadsheet-cloud.json'
             };
             anim = bodymovin.loadAnimation(animData);
             anim.setSpeed(1);
         });
-        </script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                var anim;
-                var animData = {
-                  container: document.getElementById('spreadsheet-animation2'),
-                  renderer: 'svg',
-                  loop: true,
-                  autoplay: true,
-                  rendererSettings: {
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var anim;
+            var animData = {
+                container: document.getElementById('spreadsheet-animation2'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                rendererSettings: {
                     progressiveLoad: false,
-                  },
-                  path: 'spreadsheet.json'
-                };
-                anim = bodymovin.loadAnimation(animData);
-                anim.setSpeed(1);
-            });
-            </script>
+                },
+                path: 'spreadsheet.json'
+            };
+            anim = bodymovin.loadAnimation(animData);
+            anim.setSpeed(1);
+        });
+    </script>
 </body>
+
 </html>
