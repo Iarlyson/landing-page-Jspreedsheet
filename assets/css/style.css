@@ -92,7 +92,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 1.2rem;
     padding-bottom: 0;
 }
 
@@ -186,10 +186,6 @@ p {
 .meio-dep h2 {
     margin-bottom: 2rem;
     font-weight: 600;
-}
-
-.meio-dep-tabela {
-    width: 30%;
 }
 
 .intro-text-content h1 {
@@ -465,7 +461,7 @@ footer ul {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
     .intro-content,
     .grid,
@@ -535,6 +531,10 @@ footer ul {
     .close-menu:checked~.close-menu-label::after {
         display: block;
         content: '×';
+    }
+
+    .meio-dep-tabela{
+        overflow: auto; /* Hide horizontal scrollbar */
     }
 
 
