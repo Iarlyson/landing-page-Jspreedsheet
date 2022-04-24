@@ -466,12 +466,19 @@ footer ul {
 @media (max-width: 900px) {
 
     .intro-content,
-    .grid,
     .quit-content,
+    .grid,
     .feat-content,
     .end-content {
         grid-template-columns: 1fr;
     }
+
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
 
     .end-content {
         padding: 3rem;
