@@ -547,7 +547,13 @@ footer ul {
     }
 
     .meio-dep-tabela{
-        overflow: auto; /* Hide horizontal scrollbar */
+        overflow: auto; 
+    }
+
+    input {
+        width: 90%;
+        margin-bottom: 1rem;
+
     }
 
     .block1, .block2, .block3  {
